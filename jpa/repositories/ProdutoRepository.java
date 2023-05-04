@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
-
+@Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Integer> {
 public List <Produto> findByDescricaoContainingIgnoreCase(String descricao);
 
